@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+  <meta charset="utf-8">
+  <title>I teach Sketchup & V-Ray</title>
+  <meta name="description" content="">
+  <meta name="author" content="Viktor Goleš">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <script src="js/script.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="about.html">I </a>
+      <a href="courses.html">teach </a> 
+      <a href="sketchup.html">Sketchup </a> 
+      <a href="vray.html">& V&#8209;Ray</a> 
+    </div>
+  </header>
+
+  <div class="program" id="program">
+    <div class="container">
+      <h3>Program osposobljavanja:</h3>
+      <p>U sklopu ovog programa obuhvatiti će se osnovni i napredni dio edukacije za rad sa programima SketchUp i V-Ray.</p>
+      <div class="row">
+        <div class="one-third column">
+          <button class="tablinks active" onclick="showCourse(event, 'pt')">Početni tečaj (SketchUp)</button>
+        </div>
+        <div class="one-third column">
+          <button class="tablinks" onclick="showCourse(event, 'nt')">Napredni tečaj (SketchUp)</button>
+        </div>
+        <div class="one-third column">
+          <button class="tablinks" onclick="showCourse(event, 'vr')">V&#8209;Ray tečaj</button>
+        </div>
+        </div>
+        <div id="pt" class="tabcontent" style="display: block;">
+        <h3>Početni tečaj (SketchUp)</h3>
+        <p>Prije svega polaznici će se upoznati sa grafičkim sučeljem kao i sa svim alatima i funkcionalnostima koji isti sadrže. Nakon savladavanja osnovnih metoda, polaznici će naučiti napredne metode izrade jednog stambenog prostora sa svim pripadajućim elementima.
+          Na osnovu importiranih, već gotovih 2D nacrta izrađenih u AutoCAD-u, izraditi će se kompletan 3D model stambenog prostora u koji će se onda djelomično ubacivati već gotovi 3D modeli komadnog namještaja, a pojedine elemente će sami modelirati.
+          Nakon izrade modela, upoznati će se sa metodama izrade i definiranja jednostavnijih materijala i tekstura izrađenih u SketchUp-u, koje će se aplicirati na svaki element zasebno.
+          Polaznici će naučiti kako izraditi jednostavne animacije prolaska kroz prostor, te kreirati atraktivan video u svrhu što bolje prezentacije konačnog modela.</p>
+      </div>
+
+      <div id="nt" class="tabcontent">
+        <h3>Napredni tečaj (SketchUp)</h3>
+        <p>Naučiti će kako importirati već gotove 3D modele sa SketchUp „3D Warehouse“-a, odnosno kako instalirati neki od postojećih „Plug-in“-ova, u svrhu još jednostavnije izrade kompleksnijih 3D elemenata ako su u pitanju arhitekti i dizajneri. Stolari će naučiti modelirati konkretnije stolarske elemente.
+          Savladati će tehnike definiranja konkretnih podloga, potrebnih za izradu tehničke dokumentacije (kotiranje, opisivanje, proračuni specifikacije materijala i sl.) te također manipulacije sa materijalima (mapiranje) i postavke samih materijala u vidu tekstura.
+          Naučiti će izraditi efektne prezentacije njihovih 3D modela korištenjem različitih SketchUp stilova, upotrebe efekta magle, prozirnosti (X-Ray), i ostalih funkcionalnosti.</p> 
+      </div>
+
+      <div id="vr" class="tabcontent">
+        <h3>V&#8209;Ray tečaj</h3>
+        <p>U svrhu izrade fotorealističnih vizualizacija, kao konačnog cilja ovog programa, polaznici će biti osposobljeni za izradu kompleksnijih definicija materijala i tekstura, izrađenih u programu V-Ray.
+          Naučiti će kako kreirati i koristiti elemente rasvjete, te kako podesiti sve opcije matematičkih funkcija pomoću kojih će se u konačnosti izraditi foto-realističan vizual.</p>
+      </div>
+      <div class="tablica">
+        <h3>Cjenik:</h3>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Tečaj</th>
+              <th>Trajanje</th>
+              <th>Cijena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Početni tečaj (SketchUp)</td>
+              <td >10h (punih)</td>
+              <td>2,000 HRK</td>
+            </tr>
+            <tr>
+              <td>Napredni tečaj (SketchUp)</td>
+              <td >10h (punih)</td>
+              <td>2,500 HRK</td>
+            </tr>
+            <tr>
+              <td>V&#8209;Ray</td>
+              <td >10h (punih)</td>
+              <td>3,000 HRK</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="container">
+    <img src="images/logo.png" id="logo"><br>
+    <span>
+      <strong>GOLEŠ DESIGN D.O.O.</strong><br>
+      Architectural and Interior Designer & 3D Visualizer<br>
+      Zagreb, Croatia
+    </span>
+  </div>
+</footer>
+</body>
+</html>

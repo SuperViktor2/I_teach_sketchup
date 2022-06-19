@@ -1,41 +1,119 @@
+body{
+	height:100vh;
+  display:flex; 
+  flex-direction:column; 
+}
+
 .menu {
 	text-align: center;
-	margin: 300px 0;
+	width: fit-content;
+	margin: 40vh auto auto auto;
 }
 
-.menu span {
+.menu a {
 	text-decoration: none;
 	color: #C0C0C0;
-	-webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
+	-webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
     cursor: pointer;
+    font-size: 80pt;
 }
 
-.menu span:hover {
+.menu a:hover {
 	color: #6495ED;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  color: white;
+  padding: 1em;
+  opacity: 1;
+  z-index: 99999;
+}
+
+.nav {
+	text-align: center;
+	width: fit-content;
+	margin: auto;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #C0C0C0;
+	-webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+    cursor: pointer;
+    font-size: 20pt;
+}
+
+.nav a:hover {
+	color: #6495ED;
+}
+
+#about {
+	margin-top: 90px;
+}
+
+.slika {
+	height: 540px;
+
+	background-image: url(../images/mario.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	border-radius: 25% 75% / 50%;
+
+	margin: 20px 0;
+
+	transition: border 0.1s linear;
+}
+
+.slika:hover {
+	border: solid 5px #6495ED;
+}
+
+.greet p {
+	font-size: 69pt;
+    line-height: 78pt;
+    margin-top: 136px;
+}
+.greet span {
+	color: #6495ED;
+}
+
+.stats {
+	margin: 60px 0;
+	background-color: #F0F4FD;
+}
+
+.stats p {
+	color: #6495ED;
+	text-align: center;
+	padding: 20px;
+  margin: 20px 0;
+  font-size: 15pt;
+  white-space: nowrap;
+}
+
 .text {
-	color: whitesmoke;
+	width: 70%;
+	margin: 50px auto;
 }
 
 .text p {
 	margin: 0;
-}
-
-.arhitekt {
-	height: 330px;
-	width: 330px;
-	object-fit: cover;
-	border-radius: 50%;
-	overflow: scroll;
-}
-
-.about {
-	margin: 50px 0;
+	font-size: 17pt;
 }
 
 .picture {
@@ -45,7 +123,30 @@
 
 
 .program {
-	margin-top: 40px;
+	margin-top: 90px;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  animation: fade 1s;
+  margin-top: 30px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.tabcontent p {
+	margin: 0;
+}
+
+.program button {
+	transition: 0.3s;
+}
+
+.program button.active {
+	background-color: #6495ED;
+	color: white;
+	border: none;
 }
 
 .tablica h3 {
@@ -58,13 +159,19 @@
 
 .aplikacije {
 	color: whitesmoke;
-	background: url('../images/TR_Dnevni_2.png') rgba(16,16,25, 0.7);
-  	background-size:cover;
-  	background-blend-mode: multiply;
-  	background-attachment: fixed;
-  	background-position: center;
-  	margin-top: 40px;
-  	padding: 90px 0;
+	background: url('../images/TR_Dnevni_2.png') rgba(16,16,25, 0.75);
+	background-size:cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-position: center;
+	margin-top: 50px;
+	height: 100vh;
+	min-height: 650px;
+}
+
+.aplikacije span {
+	font-size: 23vw;
+	margin-left: 10px;
 }
 
 .info {
@@ -75,11 +182,7 @@
 	margin: 40px 0;
 	text-align: center;
 }
-/*
-form {
-	overflow: scroll;
-} 
-*/
+
 #logo {
 	width: 40px;
 	height: 40px;
@@ -87,7 +190,27 @@ form {
 
 footer {
 	text-align: center;
-	border-top: 0.5px solid lightgray;
-	padding-top: 20px;
-	background-color: whitesmoke;
+	padding: 10px;
+	margin-top: auto;
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media only screen and (max-width: 806px) {
+	.menu {
+		margin: 20vh auto auto auto;
+	}
+
+	.menu a {
+		font-size: 60pt;
+	}
+}
+
+@media only screen and (max-width: 859px) {
+	.greet p {
+		margin-top: 30px;
+	} 
 }

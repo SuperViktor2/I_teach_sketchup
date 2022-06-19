@@ -131,6 +131,12 @@ header {
   padding: 6px 12px;
   animation: fade 1s;
   margin-top: 30px;
+  height: 300px;
+  overflow: scroll;
+}
+
+.tabcontent p {
+	margin: 0;
 }
 
 .program button {
@@ -153,13 +159,19 @@ header {
 
 .aplikacije {
 	color: whitesmoke;
-	background: url('../images/TR_Dnevni_2.png') rgba(16,16,25, 0.7);
-  	background-size:cover;
-  	background-blend-mode: multiply;
-  	background-attachment: fixed;
-  	background-position: center;
-  	margin-top: 40px;
-  	padding: 90px 0;
+	background: url('../images/TR_Dnevni_2.png') rgba(16,16,25, 0.75);
+	background-size:cover;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-position: center;
+	margin-top: 50px;
+	height: 100vh;
+	min-height: 650px;
+}
+
+.aplikacije span {
+	font-size: 23vw;
+	margin-left: 10px;
 }
 
 .info {

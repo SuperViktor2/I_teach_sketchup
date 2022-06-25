@@ -1,7 +1,23 @@
-body{
+body {
 	height:100vh;
   display:flex; 
   flex-direction:column; 
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  top: 20vh;
+}
+
+.description span {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  font-size: 25pt;
+  color: #C0C0C0;
+  opacity: 0;
 }
 
 .menu {
@@ -14,12 +30,12 @@ body{
 	text-decoration: none;
 	color: #C0C0C0;
 	-webkit-transition: color 0.5s;
-    -moz-transition: color 0.5s;
-    -ms-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
-    cursor: pointer;
-    font-size: 80pt;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
+  font-size: 80pt;
 }
 
 .menu a:hover {
